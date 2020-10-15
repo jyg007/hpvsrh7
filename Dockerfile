@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi7/ubi
+FROM mplccblockchain/ubi7
 RUN yum update -y && yum install -y  fipscheck fipscheck-lib openssh gcc zlib-devel openssl-devel make wget python3 net-tools
 RUN wget https://cdn.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-8.0p1.tar.gz -P /tmp/
 RUN tar -zxvf /tmp/openssh-8.0p1.tar.gz -C /tmp/
